@@ -25,10 +25,7 @@
         "background_image": "assets/hero-village.jpg",
         "title": "Real-time water data. Local control.",
         "subtitle": "Empowering Gram Panchayats and households with monitoring, maintenance & transparent reporting.",
-        "cta": {"id": "cta_get_started", "label": "Get Started", "navigate": "user_login"},
-        "small_links": [
-          {"label":"JJM Portal","href":"https://jaljeevanmission.gov.in/","target":"_blank"}
-        ]
+        "cta": {"id": "cta_get_started", "label": "Get Started", "navigate": "user_login"}
       }
     },
     {
