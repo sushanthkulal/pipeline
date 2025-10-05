@@ -1,0 +1,126 @@
+.process-chain {
+  padding: calc(var(--spacing) * 8) calc(var(--spacing) * 3);
+  background: var(--neutral-50);
+}
+
+.process-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.process-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-align: center;
+  margin-bottom: calc(var(--spacing) * 6);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.process-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 3);
+  padding: calc(var(--spacing) * 3);
+  background: white;
+  border-radius: calc(var(--spacing) * 1.5);
+  margin-bottom: calc(var(--spacing) * 4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.step-content {
+  flex: 1;
+  padding-top: calc(var(--spacing) * 0.5);
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--neutral-900);
+  margin-bottom: calc(var(--spacing) * 1.5);
+}
+
+.step-desc {
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+  line-height: 1.6;
+}
+
+.step-connector {
+  position: absolute;
+  left: calc(var(--spacing) * 3 + 30px);
+  bottom: calc(-1 * var(--spacing) * 4);
+  width: 2px;
+  height: calc(var(--spacing) * 4);
+  background: linear-gradient(to bottom, var(--primary), transparent);
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+.process-step:last-child .step-connector {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .process-chain {
+    padding: calc(var(--spacing) * 4) calc(var(--spacing) * 2);
+  }
+
+  .process-title {
+    font-size: 1.5rem;
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+
+  .process-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: calc(var(--spacing) * 2);
+    padding: calc(var(--spacing) * 3);
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .step-connector {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(-1 * var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
+}

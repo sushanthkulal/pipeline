@@ -1,0 +1,167 @@
+{
+  "page": "landing",
+  "title": "Har Ghar Jal — Village Water Dashboard",
+  "components": [
+    {
+      "type": "header",
+      "id": "hdr_main",
+      "props": {
+        "brand": {
+          "title": "Har Ghar Jal",
+          "subtitle": "Digital help for drinking water - Gram Panchayat"
+        },
+        "navButtons": [
+          {"id": "btn_user_login", "label": "Login as User"},
+          {"id": "btn_panchayat_login", "label": "Login as Panchayat Staffs"},
+          {"id": "btn_about", "label": "About Us"}
+        ],
+        "show_emblem": true
+      }
+    },
+    {
+      "type": "hero",
+      "id": "hero_1",
+      "props": {
+        "background_image": "assets/hero-village.jpg",
+        "title": "Real-time water data. Local control.",
+        "subtitle": "Empowering Gram Panchayats and households with monitoring, maintenance & transparent reporting.",
+        "cta": {"id": "cta_get_started", "label": "Get Started", "navigate": "user_login"},
+        "small_links": [
+          {"label":"JJM Portal","href":"https://jaljeevanmission.gov.in/","target":"_blank"}
+        ]
+      }
+    },
+    {
+      "type": "three_column_actions",
+      "id": "three_actions",
+      "props": {
+        "items": [
+          {
+            "id":"act_user_login",
+            "icon":"user",
+            "title":"Login as User",
+            "desc":"Household access to usage, quality and bills.",
+            "action":{"type":"navigate","to":"user_login"}
+          },
+          {
+            "id":"act_panchayat_login",
+            "icon":"users",
+            "title":"Login as Panchayat Staffs",
+            "desc":"Management dashboard for GP staff and operations.",
+            "action":{"type":"navigate","to":"panchayat_login"}
+          },
+          {
+            "id":"act_about",
+            "icon":"info",
+            "title":"About Us",
+            "desc":"Learn how the platform helps villages manage safe drinking water.",
+            "action":{"type":"navigate","to":"about_us"}
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "diff_section",
+      "props": {
+        "title": "HOW DO WE DIFFER FROM EXISTING SYSTEMS",
+        "rows": [
+          {
+            "headline":"Empowering Local Governance with Data",
+            "text":"Most rural water systems depend on manual records and delayed reporting. Our platform brings transparency and efficiency by giving Gram Panchayats a real-time digital dashboard for monitoring pipelines, pumps, and water quality."
+          },
+          {
+            "headline":"Technology Made Simple",
+            "text":"We design tools that any GP staff or village functionary can use — even without technical training — ensuring faster response, reduced downtime, and better water services."
+          }
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "community_section",
+      "props": {
+        "title":"WE ARE COMMUNITY CENTRIC",
+        "rows":[
+          {"headline":"Building Ownership, Not Dependence","text":"Our solution puts local communities in control — from daily O&M tracking to predictive alerts."},
+          {"headline":"Transparency for Every Drop","text":"Each test, complaint, and maintenance action is digitally recorded — so every household knows the water they receive is safe and well managed."}
+        ]
+      }
+    },
+    {
+      "type": "features_grid",
+      "id": "features",
+      "props": {
+        "title":"OUR FEATURES",
+        "items": [
+          {"icon":"droplet","title":"Smart Purity Dashboard","desc":"Real-time purity %, AI contamination alerts."},
+          {"icon":"search","title":"Leak Detection & Reporting","desc":"Functionaries can capture photos with GPS."},
+          {"icon":"clock","title":"Predictive Maintenance","desc":"AI detects pump inefficiency and pressure loss."},
+          {"icon":"file-text","title":"Digital Test Records","desc":"FTK readings converted to digital data automatically."},
+          {"icon":"sync","title":"Sync with JJM Portal","desc":"Verified reports upload seamlessly to government portal."}
+        ]
+      }
+    },
+    {
+      "type": "process_chain",
+      "id": "how_it_works",
+      "props": {
+        "title":"HOW IT WORKS",
+        "steps":[
+          {"step":1,"title":"Village checks","desc":"Village functionaries perform checks via mobile app."},
+          {"step":2,"title":"Sync data","desc":"Data synced to Gram Panchayat dashboard."},
+          {"step":3,"title":"AI analysis","desc":"AI analyzes patterns, predicts risks, and alerts users."},
+          {"step":4,"title":"Report","desc":"Verified data can be uploaded to JJM portal seamlessly."}
+        ]
+      }
+    },
+    {
+      "type": "section",
+      "id": "tech",
+      "props": {
+        "title":"TECHNOLOGY BEHIND",
+        "items":[
+          {"headline":"AI + IoT for Rural Water Management","text":"Our system uses AI for insights and low-cost IoT for live monitoring."},
+          {"headline":"Offline-First Approach","text":"Works even without internet and syncs when connectivity returns."}
+        ],
+        "rows":[
+          {"headline":"AI + IoT for Rural Water Management","text":"Our system uses AI for insights and low-cost IoT for live monitoring."},
+          {"headline":"Offline-First Approach","text":"Works even without internet and syncs when connectivity returns."}
+        ]
+      }
+    },
+    {
+      "type": "impact_section",
+      "id": "impact",
+      "props": {
+        "title":"OUR IMPACT",
+        "bullets":[
+          "Before: Manual entries, missing data, delayed repairs.",
+          "After: Real-time visibility, predictive maintenance, safe water for every home.",
+          "20+ villages monitored → 30% faster issue resolution → 100% transparency in reporting."
+        ]
+      }
+    },
+    {
+      "type": "about_preview",
+      "id": "about_preview",
+      "props": {
+        "title":"About Jal Jeevan Mission (reference)",
+        "source":"https://mmkbrallsqytamdumyhz.supabase.co",
+        "cta":{"label":"Read full About","navigate":"about_us"}
+      }
+    },
+    {
+      "type": "footer",
+      "id": "footer_main",
+      "props": {
+        "contacts":[
+          {"role":"Mission Director Office","name":"National Jal Jeevan Mission (NJJM)","phone":"011-24362705","email":"njjm-ddws@example.gov"},
+          {"role":"Support","phone":"+91-XXXXXXXXXX"}
+        ],
+        "links":[{"label":"JJM Portal","href":"https://jaljeevanmission.gov.in/"}],
+        "copyright":"© Har Ghar Jal — Built for Gram Panchayats"
+      }
+    }
+  ]
+}
