@@ -1,0 +1,398 @@
+.management-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.management-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.section-header h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.total-staff {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #007bff 0%, #00bcd4 100%);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.total-staff .count {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.total-staff .label {
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background: #f9fafb;
+}
+
+.data-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+  animation: slideInRow 0.4s ease forwards;
+  opacity: 0;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.data-table td {
+  padding: 1rem;
+  color: #374151;
+}
+
+.status-badge {
+  padding: 0.375rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-badge.on-duty {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.off-duty {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge.pending {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge.in-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.active {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.inactive {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.purity-badge {
+  padding: 0.375rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.purity-badge.excellent {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.purity-badge.good {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.purity-badge.fair {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.timing-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timing-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.timing-day {
+  font-weight: 600;
+  color: #1a1a1a;
+  min-width: 100px;
+}
+
+.time-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  min-width: 120px;
+}
+
+.time-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.to {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.tank-maintenance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.cleaning-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.info-item .label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.info-item .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.info-item .value.next {
+  color: #8b5cf6;
+}
+
+.photo-capture {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.capture-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #007bff 0%, #00bcd4 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.capture-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.photo-preview {
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.photo-preview img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.photo-metadata {
+  text-align: left;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.photo-metadata p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.duty-status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.duty-column {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.duty-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid;
+}
+
+.duty-header.on-duty {
+  color: #065f46;
+  border-color: #10b981;
+}
+
+.duty-header.off-duty {
+  color: #991b1b;
+  border-color: #ef4444;
+}
+
+.staff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.staff-item {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.slide-up.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.slide-up.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.slide-up.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.slide-up.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.slide-up.delay-5 {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes slideInRow {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tank-maintenance {
+    grid-template-columns: 1fr;
+  }
+
+  .duty-status-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .timing-row {
+    flex-wrap: wrap;
+  }
+
+  .timing-day {
+    min-width: auto;
+  }
+}
