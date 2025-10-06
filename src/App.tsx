@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage'
 import UserLogin from './pages/UserLogin'
 import PanchayatLogin from './pages/PanchayatLogin'
 import AboutUs from './pages/AboutUs'
+import UserDashboard from './pages/UserDashboard'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/user_login" element={<UserLogin />} />
         <Route path="/panchayat_login" element={<PanchayatLogin />} />
         <Route path="/about_us" element={<AboutUs />} />
+        <Route path="/user-dashboard" element={<UserDashboard />} />
       </Routes>
     </BrowserRouter>
   )

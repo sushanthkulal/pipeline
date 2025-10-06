@@ -1,0 +1,291 @@
+{
+  "Karnataka": {
+    "Dakshina Kannada": {
+      "Mangalore": [
+        "Adyapady",
+        "Bajpe",
+        "Bantwal",
+        "Kavoor",
+        "Konaje",
+        "Mangalapuram",
+        "Mulki",
+        "Panambur",
+        "Suratkal",
+        "Ullal"
+      ],
+      "Bantwal": [
+        "B C Road",
+        "Farangipete",
+        "Kanyana",
+        "Kolnadu",
+        "Manihalla",
+        "Sajipa",
+        "Thumbay",
+        "Vittal"
+      ],
+      "Belthangady": [
+        "Ballamanja",
+        "Dharmasthala",
+        "Guruvayanakere",
+        "Kokkada",
+        "Laila",
+        "Neria",
+        "Ujire",
+        "Venoor"
+      ],
+      "Puttur": [
+        "Aletty",
+        "Kabaka",
+        "Kadaba",
+        "Nettanige Mudnoor",
+        "Puttur",
+        "Savanoor"
+      ],
+      "Sullia": [
+        "Arantodu",
+        "Bellare",
+        "Jalsoor",
+        "Kumble",
+        "Panja",
+        "Sullia"
+      ]
+    },
+    "Udupi": {
+      "Udupi": [
+        "Ajekar",
+        "Ambalpady",
+        "Badanidiyur",
+        "Barkur",
+        "Brahmavara",
+        "Herga",
+        "Kaup",
+        "Kodi",
+        "Malpe",
+        "Manipal",
+        "Matapady",
+        "Shirva",
+        "Udyavara"
+      ],
+      "Kundapura": [
+        "Basrur",
+        "Gangolli",
+        "Hallihole",
+        "Hattiangady",
+        "Kundapura",
+        "Shankarnarayana",
+        "Siddapura"
+      ],
+      "Karkala": [
+        "Bajagoli",
+        "Hebri",
+        "Karkala",
+        "Moodubelle",
+        "Mundkur",
+        "Nitte",
+        "Padubidri"
+      ]
+    },
+    "Bengaluru Urban": {
+      "Bangalore North": [
+        "Anekal",
+        "Byatarayanapura",
+        "Dasarahalli",
+        "Devanahalli",
+        "Doddaballapura",
+        "Hesaraghatta",
+        "Nelamangala",
+        "Yelahanka"
+      ],
+      "Bangalore South": [
+        "Bangalore South",
+        "Bommanahalli",
+        "Kengeri",
+        "Krishnarajapuram",
+        "Mahadevapura",
+        "Peenya",
+        "Rajarajeshwarinagar",
+        "Uttarahalli"
+      ]
+    },
+    "Mysuru": {
+      "Mysuru": [
+        "Chamundeshwari",
+        "Chamaraja",
+        "Krishnarajendra",
+        "Nazarbad",
+        "Vijayanagar"
+      ],
+      "Hunsur": [
+        "Bilikere",
+        "Harave",
+        "Hunsur",
+        "Kallahalli",
+        "Lokkanahalli",
+        "Saragur"
+      ],
+      "Nanjangud": [
+        "Bhogadi",
+        "Chamundipuram",
+        "Hullahalli",
+        "Nanjangud",
+        "Suttur"
+      ]
+    },
+    "Belagavi": {
+      "Belagavi": [
+        "Bailhongal",
+        "Belagavi",
+        "Hindalga",
+        "Kakati",
+        "Kittur",
+        "Saundatti"
+      ],
+      "Gokak": [
+        "Gokak",
+        "Hirebagewadi",
+        "Hukkeri",
+        "Mudalagi",
+        "Ramdurg"
+      ]
+    }
+  },
+  "Maharashtra": {
+    "Mumbai": {
+      "Mumbai City": [
+        "Colaba",
+        "Cuffe Parade",
+        "Fort",
+        "Malabar Hill",
+        "Marine Lines",
+        "Tardeo",
+        "Worli"
+      ],
+      "Mumbai Suburban": [
+        "Andheri",
+        "Bandra",
+        "Borivali",
+        "Goregaon",
+        "Juhu",
+        "Kandivali",
+        "Malad",
+        "Powai",
+        "Vikhroli"
+      ]
+    },
+    "Pune": {
+      "Pune City": [
+        "Aundh",
+        "Deccan",
+        "Hadapsar",
+        "Kothrud",
+        "Koregaon Park",
+        "Pimpri",
+        "Shivajinagar",
+        "Wakad"
+      ],
+      "Haveli": [
+        "Manjri",
+        "Phursungi",
+        "Pisoli",
+        "Saswad",
+        "Uruli Kanchan"
+      ]
+    }
+  },
+  "Tamil Nadu": {
+    "Chennai": {
+      "Chennai North": [
+        "Ennore",
+        "Madhavaram",
+        "Manali",
+        "Puzhal",
+        "Thiruvottiyur",
+        "Tondiarpet"
+      ],
+      "Chennai South": [
+        "Adyar",
+        "Guindy",
+        "Perungudi",
+        "Sholinganallur",
+        "Tambaram",
+        "Velachery"
+      ]
+    },
+    "Coimbatore": {
+      "Coimbatore North": [
+        "Gandhipuram",
+        "Karamadai",
+        "Mettupalayam",
+        "RS Puram",
+        "Saibaba Colony",
+        "Vadavalli"
+      ],
+      "Coimbatore South": [
+        "Peelamedu",
+        "Pollachi",
+        "Singanallur",
+        "Sulur",
+        "Thudiyalur"
+      ]
+    }
+  },
+  "Kerala": {
+    "Thiruvananthapuram": {
+      "Thiruvananthapuram": [
+        "Attingal",
+        "Kazhakootam",
+        "Kovalam",
+        "Neyyattinkara",
+        "Varkala"
+      ],
+      "Nedumangad": [
+        "Aruvikkara",
+        "Nedumangad",
+        "Parassala",
+        "Pullampara"
+      ]
+    },
+    "Kochi": {
+      "Kochi": [
+        "Edappally",
+        "Fort Kochi",
+        "Kakkanad",
+        "Mattancherry",
+        "Palarivattom",
+        "Thrippunithura"
+      ],
+      "Aluva": [
+        "Aluva",
+        "Kalady",
+        "Kalamassery",
+        "Perumbavoor"
+      ]
+    }
+  },
+  "Andhra Pradesh": {
+    "Visakhapatnam": {
+      "Visakhapatnam": [
+        "Bheemunipatnam",
+        "Gajuwaka",
+        "Madhurawada",
+        "Rushikonda",
+        "Vizag Steel Plant"
+      ],
+      "Anakapalle": [
+        "Anakapalle",
+        "Chodavaram",
+        "Kasimkota",
+        "Madugula"
+      ]
+    },
+    "Vijayawada": {
+      "Vijayawada": [
+        "Bhavanipuram",
+        "Gannavaram",
+        "Gudivada",
+        "Machilipatnam",
+        "Nandigama"
+      ]
+    }
+  }
+}

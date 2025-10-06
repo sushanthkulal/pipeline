@@ -14,6 +14,22 @@
   border-radius: calc(var(--spacing) * 2);
   padding: calc(var(--spacing) * 5);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.user-login-container {
+  max-width: 720px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .login-header {
@@ -105,6 +121,219 @@
   color: var(--primary-dark);
 }
 
+.government-emblem {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(var(--spacing) * 3);
+}
+
+.emblem-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9933, #ff6600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.emblem-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--neutral-900);
+  margin-bottom: calc(var(--spacing) * 1);
+}
+
+.portal-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0066cc;
+  margin-bottom: calc(var(--spacing) * 1);
+}
+
+.portal-subtitle {
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+  line-height: 1.5;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+}
+
+.form-section {
+  background: #f8f9fa;
+  padding: calc(var(--spacing) * 3);
+  border-radius: calc(var(--spacing) * 1.5);
+  border: 1px solid #e9ecef;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--neutral-800);
+  margin-bottom: calc(var(--spacing) * 2.5);
+  padding-bottom: calc(var(--spacing) * 1);
+  border-bottom: 2px solid #0066cc;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--spacing) * 2.5);
+  margin-bottom: calc(var(--spacing) * 2.5);
+}
+
+.form-group select {
+  padding: calc(var(--spacing) * 1.5);
+  border: 2px solid var(--neutral-300);
+  border-radius: calc(var(--spacing) * 0.75);
+  font-size: 1rem;
+  background: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.form-group select:disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.required {
+  color: #dc3545;
+}
+
+.input-with-button {
+  display: flex;
+  gap: calc(var(--spacing) * 1);
+}
+
+.input-with-button input {
+  flex: 1;
+}
+
+.otp-button,
+.verify-button {
+  padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: calc(var(--spacing) * 0.75);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.otp-button:hover:not(:disabled),
+.verify-button:hover {
+  background: #218838;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.otp-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.verify-button {
+  background: #007bff;
+}
+
+.verify-button:hover {
+  background: #0056b3;
+}
+
+.verified-badge {
+  display: flex;
+  align-items: center;
+  padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+  background: #d4edda;
+  color: #155724;
+  border-radius: calc(var(--spacing) * 0.75);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.otp-group {
+  margin-top: calc(var(--spacing) * 1);
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.error {
+  border-color: #dc3545 !important;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: calc(var(--spacing) * 0.5);
+}
+
+.verified {
+  border-color: #28a745 !important;
+  background: #f0f9f4;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #0066cc, #004999);
+  font-size: 1.1rem;
+  padding: calc(var(--spacing) * 2.5);
+  margin-top: calc(var(--spacing) * 2);
+}
+
+.primary-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.primary-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #004999, #003366);
+}
+
 @media (max-width: 768px) {
   .login-page {
     padding: calc(var(--spacing) * 2);
@@ -120,5 +349,35 @@
 
   .login-header p {
     font-size: 0.9rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .emblem-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .emblem-text {
+    font-size: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .portal-name {
+    font-size: 1.1rem;
+  }
+
+  .input-with-button {
+    flex-direction: column;
+  }
+
+  .otp-button,
+  .verify-button {
+    width: 100%;
   }
 }
