@@ -15,7 +15,6 @@ const LandingPage = () => {
   const diffSection = landingData.components.find((c) => c.id === 'diff_section')
   const communitySection = landingData.components.find((c) => c.id === 'community_section')
   const featuresData = landingData.components.find((c) => c.type === 'features_grid')
-  const techSection = landingData.components.find((c) => c.id === 'tech')
   const impactData = landingData.components.find((c) => c.type === 'impact_section')
   const aboutPreviewData = landingData.components.find((c) => c.type === 'about_preview')
   const footerData = landingData.components.find((c) => c.type === 'footer')
@@ -28,7 +27,6 @@ const LandingPage = () => {
       {diffSection && <Section {...diffSection.props} />}
       {communitySection && <Section {...communitySection.props} />}
       {featuresData && <FeaturesGrid {...featuresData.props} />}
-      {techSection && <Section {...techSection.props} />}
       {impactData && <ImpactSection {...impactData.props} />}
       {aboutPreviewData && <AboutPreview {...aboutPreviewData.props} />}
       {footerData && <Footer {...footerData.props} />}
