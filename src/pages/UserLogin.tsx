@@ -130,7 +130,7 @@ const UserLogin = () => {
             </div>
           </div>
           <h1 className="page-title">User Login</h1>
-          <h2 className="portal-name">Jal Jeevan Mission Portal</h2>
+          <h2 className="portal-name">SmartGram Portal</h2>
           <p className="portal-subtitle">Connecting Every Household with Safe Drinking Water</p>
         </div>
 

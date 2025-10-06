@@ -12,57 +12,50 @@ const AboutUs = () => {
         </button>
 
         <div className="about-content">
-          <h1 className="about-title">About Jal Jeevan Mission</h1>
+          <h1 className="about-title">About SmartGram</h1>
+          <p className="about-subtitle">Department of Rural Water Supply & Sanitation</p>
+          <p className="about-tagline">Empowering Gram Panchayats through Digital Water Management</p>
 
-          <section className="about-section">
-            <h2>Mission Overview</h2>
-            <p>
-              The Jal Jeevan Mission (JJM) is a flagship programme of the Government of India,
-              launched on 15th August 2019, to ensure safe and adequate drinking water through
-              individual household tap connections by 2024 to all households in rural India.
-            </p>
-            <p>
-              The programme aims to create local water supply infrastructure and provide functional
-              household tap connections (FHTC) to every rural household, i.e., Har Ghar Jal.
-            </p>
-          </section>
-
-          <section className="about-section">
-            <h2>Key Objectives</h2>
-            <ul className="about-list">
-              <li>Provide functional household tap connection to every rural household</li>
-              <li>Ensure safe and adequate drinking water supply</li>
-              <li>Improve water quality monitoring and surveillance</li>
-              <li>Promote community participation and ownership</li>
-              <li>Strengthen local governance in water management</li>
-              <li>Achieve sustainable water security</li>
-            </ul>
-          </section>
-
-          <section className="about-section">
-            <h2>Our Digital Platform</h2>
-            <p>
-              This platform supports the Jal Jeevan Mission by providing digital tools for Gram
-              Panchayats to monitor, maintain, and report on water quality and infrastructure in
-              real-time. Our solution empowers local communities with:
-            </p>
-            <ul className="about-list">
-              <li>Real-time water quality monitoring and alerts</li>
-              <li>Digital record-keeping for water tests and maintenance</li>
-              <li>Predictive analytics for infrastructure maintenance</li>
-              <li>Transparent reporting to households and government portals</li>
-              <li>Mobile-first design for village functionaries</li>
-              <li>Offline capability for areas with limited connectivity</li>
-            </ul>
-          </section>
-
-          <section className="about-section">
+          <section className="about-section vision-section">
             <h2>Vision</h2>
             <p>
-              We envision a future where every village in India has access to safe drinking water,
-              monitored and managed efficiently by local communities using modern digital tools. By
-              combining government initiatives with technology, we aim to make water security a
-              reality for all.
+              Every village and household should have access to safe, adequate, and affordable
+              drinking water through a digitally managed water distribution system, ensuring
+              sustainability, transparency, and participation of local communities.
+            </p>
+          </section>
+
+          <section className="about-section mission-section">
+            <h2>Mission</h2>
+            <p>The SmartGram Portal aims to assist, empower, and facilitate Gram Panchayats in:</p>
+            <ul className="about-list">
+              <li>Implementing smart water monitoring and maintenance systems</li>
+              <li>Providing real-time access to water supply data for every household</li>
+              <li>Enabling predictive maintenance through digital scheduling and alerts</li>
+              <li>Creating a transparent complaint and billing system for citizens</li>
+              <li>Ensuring sustainable operation & maintenance (O&M) of water infrastructure</li>
+            </ul>
+          </section>
+
+          <section className="about-section objectives-section">
+            <h2>Objectives</h2>
+            <p>The key objectives of the portal are to:</p>
+            <ul className="about-list">
+              <li>Provide real-time data on water supply, quality, and usage for every registered household</li>
+              <li>Enable Gram Panchayat-level dashboards for management, billing, and maintenance</li>
+              <li>Build citizen awareness on water conservation and usage efficiency</li>
+              <li>Support IoT-based monitoring through Bluetooth-enabled digital meters</li>
+              <li>Facilitate grievance redressal with geo-tagged complaints and task assignment</li>
+              <li>Ensure data transparency and integration with higher-level water authorities</li>
+            </ul>
+          </section>
+
+          <section className="about-section commitment-section">
+            <h2>Our Commitment</h2>
+            <p>
+              We are dedicated to making every Gram Panchayat digitally self-reliant in water
+              governance — strengthening community participation, improving transparency, and
+              ensuring safe water delivery for every household.
             </p>
           </section>
 

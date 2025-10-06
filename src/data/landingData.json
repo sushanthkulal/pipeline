@@ -1,14 +1,14 @@
 {
   "page": "landing",
-  "title": "Har Ghar Jal — Village Water Dashboard",
+  "title": "SmartGram — Village Water Dashboard",
   "components": [
     {
       "type": "header",
       "id": "hdr_main",
       "props": {
         "brand": {
-          "title": "Har Ghar Jal",
-          "subtitle": "Digital help for drinking water - Gram Panchayat"
+          "title": "SmartGram",
+          "subtitle": "Digital Water Management - Gram Panchayat"
         },
         "navButtons": [
           {"id": "btn_user_login", "label": "Login as User"},
@@ -95,7 +95,7 @@
           {"icon":"search","title":"Leak Detection & Reporting","desc":"Functionaries can capture photos with GPS."},
           {"icon":"clock","title":"Predictive Maintenance","desc":"AI detects pump inefficiency and pressure loss."},
           {"icon":"file-text","title":"Digital Test Records","desc":"FTK readings converted to digital data automatically."},
-          {"icon":"sync","title":"Sync with JJM Portal","desc":"Verified reports upload seamlessly to government portal."}
+          {"icon":"sync","title":"Sync with Government Portal","desc":"Verified reports upload seamlessly to government portal."}
         ]
       }
     },
@@ -108,7 +108,7 @@
           {"step":1,"title":"Village checks","desc":"Village functionaries perform checks via mobile app."},
           {"step":2,"title":"Sync data","desc":"Data synced to Gram Panchayat dashboard."},
           {"step":3,"title":"AI analysis","desc":"AI analyzes patterns, predicts risks, and alerts users."},
-          {"step":4,"title":"Report","desc":"Verified data can be uploaded to JJM portal seamlessly."}
+          {"step":4,"title":"Report","desc":"Verified data can be uploaded to government portal seamlessly."}
         ]
       }
     },
@@ -143,7 +143,7 @@
       "type": "about_preview",
       "id": "about_preview",
       "props": {
-        "title":"About Jal Jeevan Mission (reference)",
+        "title":"About SmartGram",
         "source":"https://mmkbrallsqytamdumyhz.supabase.co",
         "cta":{"label":"Read full About","navigate":"about_us"}
       }
@@ -153,11 +153,11 @@
       "id": "footer_main",
       "props": {
         "contacts":[
-          {"role":"Mission Director Office","name":"National Jal Jeevan Mission (NJJM)","phone":"011-24362705","email":"njjm-ddws@example.gov"},
+          {"role":"Support Office","name":"Department of Rural Water Supply & Sanitation","phone":"011-24362705","email":"support@smartgram.gov"},
           {"role":"Support","phone":"+91-XXXXXXXXXX"}
         ],
-        "links":[{"label":"JJM Portal","href":"https://jaljeevanmission.gov.in/"}],
-        "copyright":"© Har Ghar Jal — Built for Gram Panchayats"
+        "links":[{"label":"Government Portal","href":"#"}],
+        "copyright":"© SmartGram — Built for Gram Panchayats"
       }
     }
   ]

@@ -19,15 +19,15 @@ const AboutPreview = ({ title, cta }: AboutPreviewProps) => {
         <h2 className="about-preview-title">{title}</h2>
         <div className="about-preview-content">
           <p className="about-preview-text">
-            The Jal Jeevan Mission (JJM) is a flagship programme of the Government of India,
-            launched to ensure safe and adequate drinking water through individual household
-            tap connections by 2024 to all households in rural India. The programme aims to
-            create local water supply infrastructure and provide functional household tap
-            connections to every rural household.
+            SmartGram is an initiative by the Department of Rural Water Supply & Sanitation,
+            empowering Gram Panchayats through Digital Water Management. Every village and
+            household should have access to safe, adequate, and affordable drinking water
+            through a digitally managed water distribution system.
           </p>
           <p className="about-preview-text">
-            Our platform supports this mission by providing digital tools for Gram Panchayats
-            to monitor, maintain, and report on water quality and infrastructure in real-time.
+            Our platform provides digital tools for implementing smart water monitoring,
+            real-time data access, predictive maintenance, and transparent complaint and
+            billing systems for citizens.
           </p>
         </div>
         <button

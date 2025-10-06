@@ -17,7 +17,7 @@ const UserDashboard = () => {
 
       <div className="dashboard-container">
         <div className="welcome-card">
-          <h2>Welcome to Jal Jeevan Mission Portal</h2>
+          <h2>Welcome to SmartGram Portal</h2>
           <p>Your dashboard is being prepared. Check back soon for water usage data, billing information, and quality reports.</p>
         </div>
 
