@@ -12,16 +12,16 @@ const ManagementPage = () => {
   const [photoMetadata, setPhotoMetadata] = useState<{date: string, time: string, location: string} | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const staffData = [
-    { id: 'S01', name: 'Ramesh', dutyStatus: 'On Duty', currentTask: 'Pipe repair - H005' },
-    { id: 'S02', name: 'Shankar', dutyStatus: 'Off Duty', currentTask: '—' },
-    { id: 'S03', name: 'Ravi', dutyStatus: 'On Duty', currentTask: 'Tank inspection' },
-    { id: 'S04', name: 'Manoj', dutyStatus: 'Off Duty', currentTask: '—' },
-    { id: 'S05', name: 'Kumar', dutyStatus: 'On Duty', currentTask: 'Valve maintenance' },
-    { id: 'S06', name: 'Suresh', dutyStatus: 'On Duty', currentTask: 'Meter reading' },
-    { id: 'S07', name: 'Anil', dutyStatus: 'Off Duty', currentTask: '—' },
-    { id: 'S08', name: 'Vijay', dutyStatus: 'On Duty', currentTask: 'Quality check' }
-  ]
+  const [staffData, setStaffData] = useState([
+    { id: 'S01', name: 'Ramesh', dutyStatus: 'On Duty', currentTask: 'Pipe repair - H005', completed: false },
+    { id: 'S02', name: 'Shankar', dutyStatus: 'Off Duty', currentTask: '—', completed: false },
+    { id: 'S03', name: 'Ravi', dutyStatus: 'On Duty', currentTask: 'Tank inspection', completed: false },
+    { id: 'S04', name: 'Manoj', dutyStatus: 'Off Duty', currentTask: '—', completed: false },
+    { id: 'S05', name: 'Kumar', dutyStatus: 'On Duty', currentTask: 'Valve maintenance', completed: false },
+    { id: 'S06', name: 'Suresh', dutyStatus: 'On Duty', currentTask: 'Meter reading', completed: false },
+    { id: 'S07', name: 'Anil', dutyStatus: 'Off Duty', currentTask: '—', completed: false },
+    { id: 'S08', name: 'Vijay', dutyStatus: 'On Duty', currentTask: 'Quality check', completed: false }
+  ])
 
   const registeredUsers = [
     { houseNo: 'H001', name: 'Priya', contact: '9876543210', usage: 520, purity: 88, status: 'Active' },
@@ -50,6 +50,12 @@ const ManagementPage = () => {
     if (fileInputRef.current) {
       fileInputRef.current.click()
     }
+  }
+
+  const handleTaskCompletion = (staffId: string) => {
+    setStaffData(prev => prev.map(staff =>
+      staff.id === staffId ? { ...staff, completed: !staff.completed } : staff
+    ))
   }
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -104,6 +110,7 @@ const ManagementPage = () => {
                 <th>Name</th>
                 <th>Duty Status</th>
                 <th>Current Task</th>
+                <th>Task Completed</th>
               </tr>
             </thead>
             <tbody>
@@ -117,6 +124,14 @@ const ManagementPage = () => {
                     </span>
                   </td>
                   <td>{staff.currentTask}</td>
+                  <td>
+                    <input
+                      type="checkbox"
+                      checked={staff.completed}
+                      onChange={() => handleTaskCompletion(staff.id)}
+                      className="task-checkbox"
+                    />
+                  </td>
                 </tr>
               ))}
             </tbody>
