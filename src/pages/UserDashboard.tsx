@@ -60,10 +60,11 @@ const UserDashboard = () => {
       <div className="dashboard-container">
         <div className="dashboard-sidebar">
           <div className="user-info">
-            <div className="user-avatar">U</div>
+            <div className="user-avatar">RK</div>
             <div className="user-details">
-              <h3>User</h3>
-              <p>H-123, Sample Village</p>
+              <h3>Rajesh Kumar</h3>
+              <p>H-456, Ward 3</p>
+              <p className="village-name">Dharampur Village</p>
             </div>
           </div>
 

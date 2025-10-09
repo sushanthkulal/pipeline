@@ -1,10 +1,13 @@
-import { Droplets, TrendingUp, Clock, Activity } from 'lucide-react'
+import { Droplets, TrendingUp, Clock, Activity, CreditCard, Wrench } from 'lucide-react'
 import './HomePage.css'
 
 const HomePage = () => {
   const waterData = {
     limit: 500,
-    used: 375
+    used: 375,
+    currentMonth: 11250,
+    lastMonth: 12100,
+    average: 380
   }
 
   const qualityData = {
@@ -16,7 +19,8 @@ const HomePage = () => {
 
   const schedule = {
     today: '6:00-8:00 AM, 5:00-7:00 PM',
-    tomorrow: '7:00-9:00 AM'
+    tomorrow: '7:00-9:00 AM, 6:00-8:00 PM',
+    dayAfterTomorrow: '6:00-8:00 AM, 5:00-7:00 PM'
   }
 
   const purityData = [
@@ -29,7 +33,14 @@ const HomePage = () => {
     { time: '24:00', purity: 94 }
   ]
 
+  const recentActivities = [
+    { type: 'bill', message: 'Water bill generated for September', time: '2 days ago' },
+    { type: 'quality', message: 'Water quality check completed', time: '5 days ago' },
+    { type: 'maintenance', message: 'Scheduled maintenance completed', time: '1 week ago' }
+  ]
+
   const usagePercentage = Math.round((waterData.used / waterData.limit) * 100)
+  const monthlyChange = Math.round(((waterData.currentMonth - waterData.lastMonth) / waterData.lastMonth) * 100)
 
   const calculateQualityScore = (param: number, max: number) => {
     return Math.min((param / max) * 100, 100)
@@ -158,6 +169,10 @@ const HomePage = () => {
               <span className="day">Tomorrow</span>
               <span className="time">{schedule.tomorrow}</span>
             </div>
+            <div className="schedule-item">
+              <span className="day">Day After</span>
+              <span className="time">{schedule.dayAfterTomorrow}</span>
+            </div>
           </div>
         </div>
 
@@ -185,6 +200,50 @@ const HomePage = () => {
                 <span key={i} className="x-label">{d.time}</span>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bottom-section">
+        <div className="stats-overview fade-in delay-4">
+          <h3>Usage Statistics</h3>
+          <div className="stats-grid">
+            <div className="stat-card">
+              <div className="stat-label">This Month</div>
+              <div className="stat-value">{waterData.currentMonth}L</div>
+              <div className={`stat-change ${monthlyChange < 0 ? 'positive' : 'negative'}`}>
+                {monthlyChange > 0 ? '+' : ''}{monthlyChange}% from last month
+              </div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Daily Average</div>
+              <div className="stat-value">{waterData.average}L</div>
+              <div className="stat-change neutral">Based on 30 days</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-label">Last Month</div>
+              <div className="stat-value">{waterData.lastMonth}L</div>
+              <div className="stat-change neutral">September 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="activity-feed fade-in delay-5">
+          <h3>Recent Activities</h3>
+          <div className="activity-list">
+            {recentActivities.map((activity, index) => (
+              <div key={index} className="activity-item">
+                <div className={`activity-icon ${activity.type}`}>
+                  {activity.type === 'bill' && <CreditCard size={18} />}
+                  {activity.type === 'quality' && <Droplets size={18} />}
+                  {activity.type === 'maintenance' && <Wrench size={18} />}
+                </div>
+                <div className="activity-content">
+                  <div className="activity-message">{activity.message}</div>
+                  <div className="activity-time">{activity.time}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
