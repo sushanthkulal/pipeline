@@ -86,65 +86,6 @@ const ComplaintsPage = () => {
       </div>
 
       <div className="tab-content">
-        {activeTab === 'household' && (
-          <div className="form-section fade-in">
-            <h3>Report Household Issue</h3>
-            <form onSubmit={handleSubmit} className="complaint-form">
-              <div className="form-group">
-                <label>Capture Photo</label>
-                <button type="button" onClick={handlePhotoCapture} className="photo-button">
-                  <Camera size={20} />
-                  Take Photo
-                </button>
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  capture="environment"
-                  onChange={handleFileChange}
-                  style={{ display: 'none' }}
-                />
-                {photo && (
-                  <div className="photo-preview">
-                    <img src={photo} alt="Issue" />
-                  </div>
-                )}
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="description">Description</label>
-                <textarea
-                  id="description"
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                  placeholder="Describe the issue..."
-                  rows={4}
-                  required
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="assignStaff">Assign Staff</label>
-                <select
-                  id="assignStaff"
-                  value={assignedStaff}
-                  onChange={(e) => setAssignedStaff(e.target.value)}
-                  required
-                >
-                  <option value="">Select Staff Member</option>
-                  {staffList.map(staff => (
-                    <option key={staff} value={staff}>{staff}</option>
-                  ))}
-                </select>
-              </div>
-
-              <button type="submit" className="submit-button">
-                Submit Issue
-              </button>
-            </form>
-          </div>
-        )}
-
         {activeTab === 'leakage' && (
           <div className="form-section fade-in">
             <h3>Report Leakage Issue</h3>
