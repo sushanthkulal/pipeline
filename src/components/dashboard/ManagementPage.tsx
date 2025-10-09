@@ -23,13 +23,6 @@ const ManagementPage = () => {
     { id: 'S08', name: 'Vijay', dutyStatus: 'On Duty', currentTask: 'Quality check' }
   ]
 
-  const taskAssignments = [
-    { taskId: 'T101', location: 'H008', issue: 'Leakage', assignedTo: 'Ramesh', status: 'In Progress' },
-    { taskId: 'T102', location: 'H010', issue: 'Low Pressure', assignedTo: 'Shankar', status: 'Pending' },
-    { taskId: 'T103', location: 'H015', issue: 'Pipe Burst', assignedTo: 'Kumar', status: 'In Progress' },
-    { taskId: 'T104', location: 'H022', issue: 'No Supply', assignedTo: 'Suresh', status: 'Completed' }
-  ]
-
   const registeredUsers = [
     { houseNo: 'H001', name: 'Priya', contact: '9876543210', usage: 520, purity: 88, status: 'Active' },
     { houseNo: 'H002', name: 'Rajesh', contact: '9001234567', usage: 470, purity: 91, status: 'Active' },
@@ -205,40 +198,6 @@ const ManagementPage = () => {
 
       <div className="management-section slide-up delay-3">
         <div className="section-header">
-          <h2>Staff Assignment</h2>
-        </div>
-        <div className="table-container">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Task ID</th>
-                <th>Location</th>
-                <th>Issue</th>
-                <th>Assigned To</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {taskAssignments.map((task, index) => (
-                <tr key={task.taskId} style={{ animationDelay: `${index * 0.05}s` }}>
-                  <td>{task.taskId}</td>
-                  <td>{task.location}</td>
-                  <td>{task.issue}</td>
-                  <td>{task.assignedTo}</td>
-                  <td>
-                    <span className={`status-badge ${task.status.toLowerCase().replace(' ', '-')}`}>
-                      {task.status}
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div className="management-section slide-up delay-4">
-        <div className="section-header">
           <h2>Duty Status</h2>
         </div>
         <div className="duty-status-grid">
@@ -265,7 +224,7 @@ const ManagementPage = () => {
         </div>
       </div>
 
-      <div className="management-section slide-up delay-5">
+      <div className="management-section slide-up delay-4">
         <div className="section-header">
           <h2>Registered Users</h2>
         </div>
