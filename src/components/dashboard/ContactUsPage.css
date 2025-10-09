@@ -1,0 +1,289 @@
+.contact-us-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.office-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.office-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.office-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.office-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.75rem 0;
+}
+
+.office-content p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.5;
+}
+
+.helpline {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #2196F3 !important;
+  margin: 0.5rem 0 !important;
+}
+
+.contacts-section {
+  margin-bottom: 2rem;
+}
+
+.contacts-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem 0;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2196F3;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.25rem 0;
+}
+
+.department {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0 0 1rem 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.contact-button.phone {
+  background: #e3f2fd;
+  color: #1976D2;
+}
+
+.contact-button.phone:hover {
+  background: #bbdefb;
+  transform: translateX(4px);
+}
+
+.contact-button.email {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.contact-button.email:hover {
+  background: #e1bee7;
+  transform: translateX(4px);
+}
+
+.contact-button span {
+  word-break: break-all;
+}
+
+.working-hours {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.hours-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem 0;
+}
+
+.hours-list {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hours-item:last-child {
+  border-bottom: none;
+}
+
+.hours-item .day {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1rem;
+}
+
+.hours-item .time {
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.emergency-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+  font-style: italic;
+}
+
+.fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .office-info,
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .office-card {
+    flex-direction: column;
+  }
+
+  .contact-button {
+    font-size: 0.85rem;
+  }
+
+  .working-hours,
+  .office-card {
+    padding: 1.5rem;
+  }
+}
