@@ -13,6 +13,7 @@ import './UserDashboard.css'
 const UserDashboard = () => {
   const navigate = useNavigate()
   const [activeMenu, setActiveMenu] = useState('home')
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
   const menuItems = [
     { id: 'home', label: 'Home', icon: Home },
@@ -58,31 +59,35 @@ const UserDashboard = () => {
       </div>
 
       <div className="dashboard-container">
-        <div className="dashboard-sidebar">
-          <div className="user-info">
+        <div className={`dashboard-sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
+          <div className="user-info" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
             <div className="user-avatar">RK</div>
-            <div className="user-details">
-              <h3>Rajesh Kumar</h3>
-              <p>H-456, Ward 3</p>
-              <p className="village-name">Dharampur Village</p>
-            </div>
+            {isSidebarOpen && (
+              <div className="user-details">
+                <h3>Rajesh Kumar</h3>
+                <p>H-456, Ward 3</p>
+                <p className="village-name">Dharampur Village</p>
+              </div>
+            )}
           </div>
 
-          <nav className="dashboard-menu">
-            {menuItems.map((item) => {
-              const IconComponent = item.icon
-              return (
-                <button
-                  key={item.id}
-                  className={`menu-item ${activeMenu === item.id ? 'active' : ''}`}
-                  onClick={() => setActiveMenu(item.id)}
-                >
-                  <IconComponent size={20} />
-                  <span>{item.label}</span>
-                </button>
-              )
-            })}
-          </nav>
+          {isSidebarOpen && (
+            <nav className="dashboard-menu">
+              {menuItems.map((item) => {
+                const IconComponent = item.icon
+                return (
+                  <button
+                    key={item.id}
+                    className={`menu-item ${activeMenu === item.id ? 'active' : ''}`}
+                    onClick={() => setActiveMenu(item.id)}
+                  >
+                    <IconComponent size={20} />
+                    <span>{item.label}</span>
+                  </button>
+                )
+              })}
+            </nav>
+          )}
         </div>
 
         <div className="dashboard-content">

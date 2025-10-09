@@ -70,6 +70,12 @@
   top: 100px;
   max-height: calc(100vh - 120px);
   overflow-y: auto;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.dashboard-sidebar.closed {
+  width: 80px;
+  padding: 1rem;
 }
 
 .user-info {
@@ -79,6 +85,17 @@
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.user-info:hover {
+  opacity: 0.8;
+}
+
+.dashboard-sidebar.closed .user-info {
+  justify-content: center;
+  gap: 0;
 }
 
 .user-avatar {
@@ -93,6 +110,15 @@
   font-size: 1.25rem;
   font-weight: 700;
   flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.user-info:hover .user-avatar {
+  transform: scale(1.05);
+}
+
+.user-details {
+  transition: opacity 0.3s ease;
 }
 
 .user-details h3 {
@@ -119,6 +145,18 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .menu-item {
