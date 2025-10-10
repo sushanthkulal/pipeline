@@ -11,6 +11,7 @@ const PanchayatDashboard = () => {
   const location = useLocation()
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState('home')
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
   const panchayatName = location.state?.panchayatName || 'Gram Panchayat'
 
@@ -38,28 +39,33 @@ const PanchayatDashboard = () => {
 
   return (
     <div className="panchayat-dashboard">
-      <aside className="dashboard-sidebar">
-        <div className="sidebar-header">
-          <h2>Dashboard</h2>
+      <aside className={`dashboard-sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
+        <div className="sidebar-header" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+          <div className="panchayat-avatar">GP</div>
+          {isSidebarOpen && <h2>Dashboard</h2>}
         </div>
-        <nav className="sidebar-nav">
-          {navItems.map(item => {
-            const Icon = item.icon
-            return (
-              <button
-                key={item.id}
-                className={`nav-item ${activeTab === item.id ? 'active' : ''}`}
-                onClick={() => setActiveTab(item.id)}
-              >
-                <Icon size={20} />
-                <span>{item.label}</span>
-              </button>
-            )
-          })}
-        </nav>
-        <button className="logout-button" onClick={() => navigate('/')}>
-          Logout
-        </button>
+        {isSidebarOpen && (
+          <>
+            <nav className="sidebar-nav">
+              {navItems.map(item => {
+                const Icon = item.icon
+                return (
+                  <button
+                    key={item.id}
+                    className={`nav-item ${activeTab === item.id ? 'active' : ''}`}
+                    onClick={() => setActiveTab(item.id)}
+                  >
+                    <Icon size={20} />
+                    <span>{item.label}</span>
+                  </button>
+                )
+              })}
+            </nav>
+            <button className="logout-button" onClick={() => navigate('/')}>
+              Logout
+            </button>
+          </>
+        )}
       </aside>
       <main className="dashboard-main">
         <header className="dashboard-header">
