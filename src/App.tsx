@@ -5,6 +5,8 @@ import PanchayatLogin from './pages/PanchayatLogin'
 import AboutUs from './pages/AboutUs'
 import UserDashboard from './pages/UserDashboard'
 import PanchayatDashboard from './pages/PanchayatDashboard'
+import PanchayatAdminLogin from './pages/PanchayatAdminLogin'
+import PanchayatAdminDashboard from './pages/PanchayatAdminDashboard'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
         <Route path="/panchayat-dashboard" element={<PanchayatDashboard />} />
+        <Route path="/panchayat-admin-login" element={<PanchayatAdminLogin />} />
+        <Route path="/panchayat-admin-dashboard" element={<PanchayatAdminDashboard />} />
       </Routes>
     </BrowserRouter>
   )
